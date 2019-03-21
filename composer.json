@@ -20,7 +20,7 @@
         ]
     },
     "require": {
-        "php": ">=5.5.9",
+        "php": ">=7.1.1",
         "components/jquery": "^3.3",
         "doctrine/doctrine-bundle": "^1.6",
         "doctrine/orm": "^2.5",
@@ -31,10 +31,11 @@
         "symfony/assetic-bundle": "^2.8",
         "symfony/monolog-bundle": "^3.1.0",
         "symfony/polyfill-apcu": "^1.0",
+        "symfony/polyfill-php73": "^1.10",
         "symfony/swiftmailer-bundle": "^2.6.4",
         "symfony/symfony": "3.4.*",
         "twbs/bootstrap": "^4.3",
-        "twig/twig": "^1.0||^2.0"
+        "twig/twig": "2.6.2"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",
