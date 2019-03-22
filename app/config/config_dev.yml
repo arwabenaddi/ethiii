@@ -13,29 +13,16 @@ web_profiler:
 
 monolog:
     handlers:
-        main:
-            type: stream
-            path: '%kernel.logs_dir%/%kernel.environment%.log'
-            level: debug
-            channels: ['!event']
-        console:
-            type: console
-            process_psr_3_messages: false
-            channels: ['!event', '!doctrine', '!console']
-        # To follow logs in real time, execute the following command:
-        # `bin/console server:log -vv`
-        server_log:
-            type: server_log
-            process_psr_3_messages: false
-            host: 127.0.0.1:9911
-        # uncomment to get logging in your browser
-        # you may have to allow bigger header sizes in your Web server configuration
-        #firephp:
-        #    type: firephp
-        #    level: info
-        #chromephp:
-        #    type: chromephp
-        #    level: info
+        filter_for_errors:
+            type: fingers_crossed
+            action_level: error
+            handler: error_log_handler
+            excluded_404s:
+                 # regex: exclude all 404 errors from the logs
+                 - ^/
 
+        error_log_handler:
+            type: error_log
+            level: info
 #swiftmailer:
 #    delivery_addresses: ['me@example.com']
