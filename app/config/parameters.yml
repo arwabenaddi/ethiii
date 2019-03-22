@@ -1,10 +1,10 @@
 # This file is auto-generated during the composer install
 parameters:
-    database_host: localhost
+    database_host: buwd3fyvnjp7yxrdicdg-mysql.services.clever-cloud.com
     database_port: 3306
-    database_name: pub-dyn
-    database_user: root
-    database_password: null
+    database_name: buwd3fyvnjp7yxrdicdg
+    database_user: u1dz0875bomnfbtp
+    database_password: vhrLqaVInbn20dHDM3vi
     mailer_transport: null
     mailer_host: null
     mailer_user: null
