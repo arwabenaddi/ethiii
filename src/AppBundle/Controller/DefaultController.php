@@ -17,7 +17,7 @@ use Symfony\Component\HttpFoundation\Session\Session;
 class DefaultController extends Controller
 {
     /**
-     * @Route("/", name="pagehome")
+     * @Route("/liyo", name="pagehome")
      */
     public function defaultAction(Request $request)
     {
