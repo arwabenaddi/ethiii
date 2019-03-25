@@ -38,8 +38,7 @@ class AppKernel extends Kernel
 
     public function getRootDir()
     {
-//         return __DIR__;
-        return dirname(__DIR__).'/web/app.php';
+        return __DIR__;
     }
 
     public function getCacheDir()
