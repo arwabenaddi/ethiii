@@ -92,7 +92,7 @@ class DefaultController extends Controller
     /**
      * Finds and displays a test entity.
      *
-     * @Route("listing/{id}/{ref}", name="Actif_show")
+     * @Route("/web/app.php/listing/{id}/{ref}", name="Actif_show")
      * @Method("GET")
      */
     public function showAction(Request $test)
