@@ -37,7 +37,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/web/app.php/listing", name="homepage")
+     * @Route("/listing", name="homepage")
      */
     public function indexAction(Request $request)
     {
